@@ -1,0 +1,1 @@
+# Gerador-qr-code-JavaScript
