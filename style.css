@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, blueviolet, black);
+}
+
+.container {
+  height: auto;
+  background: #fff;
+  max-width: 410px;
+  border-radius: 8px;
+  padding: 16px 25px;
+  transition: height 0.5s ease;
+}
+
+.container .active {
+  height: 530px;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+header p {
+  color: #474747;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.container .forms {
+  padding: 20px 0 25px;
+}
+
+.container :where(input, button) {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+
+.forms input {
+  padding: 0 17px;
+  font-size: 18px;
+  border: 1px solid #999;
+}
+
+.forms button {
+  color: #fff;
+  background: #000000;
+  margin-top: 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.forms button:hover {
+  background: #33005d;
+}
+
+.container .qr {
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+}
+
+.qr .img {
+  width: 200px;
+  height: auto;
+}
+
+.container.active .qr {
+  opacity: 1;
+  pointer-events: auto;
+  transition: apacity 0.5s ease;
+}
+header{
+    padding-top: 70px;
+}
